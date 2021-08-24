@@ -1,12 +1,23 @@
 package com.flipkart.bean;
 
+import java.util.ArrayList;
+
 public class Student extends User{
 
     private int studentId;
     private String branchName;
     private int semester;
+    private ArrayList<Integer> approvedCourses;
     
     public Student() {}
+
+    public ArrayList<Integer> getApprovedCourses() {
+        return approvedCourses;
+    }
+
+    public void setApprovedCourses(ArrayList<Integer> approvedCourses) {
+        this.approvedCourses = approvedCourses;
+    }
 
     public Student(int userId, String password, String name, String address, String emailID, int studentId,
 			String branchName, int semester) {

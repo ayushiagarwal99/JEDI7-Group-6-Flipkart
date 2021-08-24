@@ -23,7 +23,6 @@ public class Course
 		this.semester = semester;
 	}
 	
-	
     
     public int getSemester() {
 		return semester;

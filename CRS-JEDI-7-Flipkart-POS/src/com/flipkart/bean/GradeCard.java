@@ -7,8 +7,17 @@ public class GradeCard {
     private String semester;
     private double cgpa;
     private HashMap<Integer, Integer> map; // {courseID, score}
+    private boolean isApproved = false;
 
     public GradeCard() {}
+
+    public boolean isApproved() {
+        return isApproved;
+    }
+
+    public void setApproved(boolean isApproved) {
+        this.isApproved = isApproved;
+    }
 
     public GradeCard(Integer student_ID, String semester, double cgpa, HashMap<Integer, Integer> map) {
         this.student_ID = student_ID;

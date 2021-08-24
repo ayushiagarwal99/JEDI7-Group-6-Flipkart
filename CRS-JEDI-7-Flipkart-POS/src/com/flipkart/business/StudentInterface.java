@@ -13,4 +13,6 @@ public interface StudentInterface {
     public Notification payFees();
     public GradeCard viewGrades();
     public int getStudentId();
+    public ArrayList<Integer> getListOfRequestedCourses(int studentID);
+    public void addToApprovedList(int courseID, int studentID);
 }
